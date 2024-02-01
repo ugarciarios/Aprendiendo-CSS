@@ -1,9 +1,84 @@
+*{ /*Seleccionar elementos en general*/
+    margin: 0px;
+    padding: 0px;
+}
 body {
     background: lightgray;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #container{
-    width: 70%;
-    margin: 0px auto;
+    /*width: 70%; /*Porcentaje ancho*/
+    width: 1100px;/*Pixeles*/
+    margin: 0px auto; /*Margen*/
+    Border: 1px solid black; /*Color del borde*/
+}
+
+.article{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px; /*Distancia linea divisoria*/
+    padding-bottom: 10px; /*Separacion linea divisoria*/
+    border-bottom: 1px solid #eee;
+}
+
+article :first-child{
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.article h2 { /*Tamaño de los h2 que estan dentro de los articulos*/
+    font-size: 25px; /*Tamaño de la fuente*/
+}
+header{
+    background: red; /*Color de fondo*/
+    height: 100px; /*altura*/
+    width: 100%;   /*anchor*/
+    margin: 0px;
+    text-align: center; /*Centrar texto*/
+    line-height: 100px; /*Centrar verticalmente*/
+    color: white; /*Color de texto*/
+    border-bottom: 3 px dashed black;/*Borde por debajo*/
+}
+
+nav{
+    background: lightblue;
+    height: 50px;
+    border-bottom: solid black;
+}
+
+nav ul li{ /*Selecciono el nav y sus elementos internos, ul y el li*/
+    float: left; /*Hace que los elementos floten uno al lado izquierdo del otro */
+    list-style: none; /*Quitar estilos que vienen por defecto*/
+    margin: 10px; /*Separar elementos*/
+}
+
+.clearfix{
+    clear: both; /*Para que los elemtos se queden siempre abajo*/
+}
+
+#content{
+    float: left;
+    width: calc(80% - 80px); /*Calculo porcentaje menos pixeles*/
+    width: 80%;
+    min-height: 500px;
+    background: green;
+}
+
+aside{
+    float: left;
+    width: calc(20% - 20px); /*calculo del prcentaje menos 10 pixeles a cada lado*/
+    min-height: 500px;
+    background: orange;
+    padding-left: 10px; /*Padding a la izquierda*/
+    padding-right: 10px; /*padding a la derecha*/
+    padding-top: 20px; /*Padding arriba*/
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
 }
