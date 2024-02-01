@@ -4,16 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practicando CSS</title> <!--Cabecera-->
+    <link rel="stylesheet" href="estilos.css"> <!--Enlace entre index.html y estilos.css-->
+
+    <!--Etiqueta para codificar css, agregar background, estilos o color de la pagina-->
+    <!--Body: selector de etiqueta, #container: selector de ID, .article: selector de clase-->
+    
+    <!--<style> 
+        body{
+
+        }
+        #container{
+
+        }
+
+        .article{
+
+        }
+        
+    </style>-->
+
+
 </head>
 <body>
 
     <div id = "container"> <!--Menu-->
 
         <header>
-            <h1>CSS autodidacta</h1>
+            <h1>CSS autodidacta</h1> <!--Cabecera sitio web--> 
         </header>
 
-        <nav>
+        <nav> <!--Definir menu o barra de navegacion--> 
             <ul>
                 <li>
                     <a href="index.html">
@@ -47,6 +67,7 @@
             </ul>
         </nav>
 
+        <div class="clearfix"></div> <!--Para que los elementos de abajo no se suban hacia arriba-->
         <section id = "content"> <!--Contenido-->
 
             <article class="article">
@@ -77,6 +98,8 @@
                 <input type="submit" Value="Buscar">
           </form>  
         </aside>
+
+        <div class="clearfix"></div> <!--Para que los elementos de abajo no se suban hacia arriba-->
 
         <footer> <!--Pie de pagina-->
             Uriel Garcia WEB &copy; 2024
